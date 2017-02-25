@@ -1,0 +1,16 @@
+<MessageCollection>
+	<Detector class="TestClass" >
+		<Details>
+<![CDATA[
+<p> This detector is a test.
+]]>
+		</Details>
+	</Detector>
+
+	<BugPattern type="TEST">
+		<ShortDescription>You got the bug bro</ShortDescription>
+		<LongDescription>You got the bug reaaaaal badddddd.</LongDescription>
+	</BugPattern>
+
+	<BugCode abbrev="TEST">Found the test bug</BugCode>
+</MessageCollection>
