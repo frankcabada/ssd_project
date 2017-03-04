@@ -1,0 +1,10 @@
+<project name="ssd_project" default="CreateExecutableJar">
+	<target name="build">
+	    <jar destfile="cbgFindbugsPlugin.jar">
+	        <fileset dir="bin"/>
+	        <fileset dir="src"/>
+	        <zipfileset dir="etc" includes="*.xml" prefix=""></zipfileset>
+	    </jar>
+	    <copy file="cbgFindbugsPlugin.jar" todir="C:\Users\frank\Documents\Findbugs\findbugs-3.0.1/plugin" />
+	</target>
+</project>
