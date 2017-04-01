@@ -2,7 +2,7 @@
 	<Detector class="TestClass" >
 		<Details>
 <![CDATA[
-<p> This detector is a test.
+<p> This detector checks for proper lock/unlock ordering
 ]]>
 		</Details>
 	</Detector>
@@ -12,5 +12,5 @@
 		<LongDescription>You got the bug reaaaaal badddddd.</LongDescription>
 	</BugPattern>
 
-	<BugCode abbrev="TEST">Found the test bug</BugCode>
+	<BugCode abbrev="CLO">Found the lock/unlock bug</BugCode>
 </MessageCollection>

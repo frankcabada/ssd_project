@@ -1,10 +1,16 @@
-<project name="ssd_project" default="CreateExecutableJar">
-	<target name="build">
-	    <jar destfile="cbgFindbugsPlugin.jar">
-	        <fileset dir="bin"/>
+<project name="ssd_project" default="main">
+	<property name="FindBugs.home" value="..\..\Findbugs\findbugs-3.0.1"></property>
+	<!--Adjust relative path to your findbugs directory-->
+
+	<target name="main">
+	    <jar destfile="cloFindbugsPlugin.jar">
 	        <fileset dir="src"/>
-	        <zipfileset dir="etc" includes="*.xml" prefix=""></zipfileset>
+	        <zipfileset dir="." includes="*.xml" prefix=""></zipfileset>
 	    </jar>
-	    <copy file="cbgFindbugsPlugin.jar" todir="C:\Users\frank\Documents\Findbugs\findbugs-3.0.1/plugin" />
+	    <copy file="cloFindbugsPlugin.jar" todir="${FindBugs.home}/plugins" />
+	</target>
+
+	<target name="clean">
+		<delete file="cloFindbugsPlugin.jar" />
 	</target>
 </project>
