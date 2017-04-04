@@ -1,5 +1,0 @@
-<FindbugsPlugin>
-	<Detector class="TestClass" speed="fast" />
-
-	<BugPattern abbrev="TEST" type="TEST" category="PERFORMANCE" />
-</FindbugsPlugin>
