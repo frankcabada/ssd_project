@@ -1,5 +1,5 @@
 <MessageCollection>
-	<Detector class="TestClass" >
+	<Detector class="TestDetector" >
 		<Details>
 <![CDATA[
 <p> This detector checks for proper lock/unlock ordering

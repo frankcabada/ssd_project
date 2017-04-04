@@ -3,10 +3,14 @@ import org.apache.bcel.classfile.Code;
 import edu.umd.cs.findbugs.BugReporter;
 import edu.umd.cs.findbugs.BugInstance;
 
-public class TestClass extends ByteCodeScanningDetector {
+public class TestDetector extends ByteCodeScanningDetector {
 
-	private BugReporter reporter;
+	private BugReporter bugReporter;
 	private String currentClass;
+
+	public TestDetector(BugReporter bugReporter) {
+		this.bugReporter = bugReporter;
+	}
 
 	@Override
 	public void visit(JavaClass someObj) {
@@ -18,6 +22,6 @@ public class TestClass extends ByteCodeScanningDetector {
 	public void visit(Field field) {
 		super.visit(field);
 		if (!field.isStatic()) {
-			reporter.reportBug(new BugInstance(this, "TEST", NORMAL_PRIORITY).addClass(currentClass).addField(currentClass, field.getName(), field.getSignature(), true));
+			bugReporter.reportBug(new BugInstance(this, "TEST", NORMAL_PRIORITY).addClass(currentClass).addField(currentClass, field.getName(), field.getSignature(), true));
 		}
 	}

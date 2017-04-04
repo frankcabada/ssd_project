@@ -4,8 +4,7 @@
 
 	<target name="main">
 	    <jar destfile="cloFindbugsPlugin.jar">
-	        <fileset dir="src"/>
-	        <zipfileset dir="." includes="*.xml" prefix=""></zipfileset>
+	        <zipfileset dir="src" includes="*.xml *.java" prefix=""/>
 	    </jar>
 	    <copy file="cloFindbugsPlugin.jar" todir="${FindBugs.home}/plugins" />
 	</target>
