@@ -1,9 +1,10 @@
 <project name="ssd_project" default="main">
-	<property name="FindBugs.home" value="..\..\Findbugs\findbugs-3.0.1"></property>
+	<property name="FindBugs.home" value="..\..\..\..\..\Findbugs\findbugs"></property>
 	<!--Adjust relative path to your findbugs directory-->
 
 	<target name="main">
 	    <jar destfile="cloFindbugsPlugin.jar">
+	    	<fileset dir="src"/>
 	        <zipfileset dir="src" includes="*.xml *.java" prefix=""/>
 	    </jar>
 	    <copy file="cloFindbugsPlugin.jar" todir="${FindBugs.home}/plugins" />

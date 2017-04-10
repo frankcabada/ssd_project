@@ -1,5 +1,4 @@
 <FindbugsPlugin>
-	<Detector class="TestDetector" speed="fast" />
-
-	<BugPattern abbrev="CLO" type="TEST" category="PERFORMANCE" />
+	<Detector class="edu.umd.cs.findbugs.TestDetector"/>
+	<BugPattern abbrev="TD" type="TEST" category="CORRECTNESS" />
 </FindbugsPlugin>

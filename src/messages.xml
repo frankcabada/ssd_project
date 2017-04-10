@@ -1,5 +1,5 @@
 <MessageCollection>
-	<Detector class="TestDetector" >
+	<Detector class="edu.umd.cs.findbugs.TestDetector" >
 		<Details>
 <![CDATA[
 <p> This detector checks for proper lock/unlock ordering
@@ -12,5 +12,5 @@
 		<LongDescription>You got the bug reaaaaal badddddd.</LongDescription>
 	</BugPattern>
 
-	<BugCode abbrev="CLO">Found the lock/unlock bug</BugCode>
+	<BugCode abbrev="TD">Found the test bug</BugCode>
 </MessageCollection>
