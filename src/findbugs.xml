@@ -1,4 +1,4 @@
 <FindbugsPlugin>
-	<Detector class="edu.umd.cs.findbugs.TestDetector"/>
+	<Detector class="custom.detector.test.TestDetector"/>
 	<BugPattern abbrev="TD" type="TEST" category="CORRECTNESS" />
 </FindbugsPlugin>

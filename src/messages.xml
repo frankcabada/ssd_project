@@ -1,5 +1,5 @@
 <MessageCollection>
-	<Detector class="edu.umd.cs.findbugs.TestDetector" >
+	<Detector class="custom.detector.test.TestDetector" >
 		<Details>
 <![CDATA[
 <p> This detector checks for proper lock/unlock ordering
